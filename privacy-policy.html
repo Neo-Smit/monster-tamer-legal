@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Политика конфиденциальности · Masters of Familiars</title>
+<meta name="description" content="Публичная политика конфиденциальности игры «Мастера Фамильяров» (Masters of Familiars) на русском, английском, японском, китайском и корейском языках.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Макет: один узкий столбец документа, нумерованные разделы с левым акцентом,
+     переключатель RU/EN закреплён сверху справа, лёгкая стихийная эмблема в шапке. */
+  :root {
+    --paper: #f5f6f9;
+    --paper-raised: #ffffff;
+    --ink: #1b1f2b;
+    --ink-dim: #4a5068;
+    --ink-faint: #868ca3;
+    --line: #dde0ea;
+    --accent: #5b4fd6;
+    --accent-ink: #ffffff;
+    --accent-soft: #edebfb;
+    --fire: #e4572e;
+    --water: #2e86de;
+    --earth: #5a8f4f;
+    --wind: #5bbcd6;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #13151d;
+      --paper-raised: #1b1e29;
+      --ink: #e9eaf2;
+      --ink-dim: #b2b6c9;
+      --ink-faint: #767c92;
+      --line: #2c3040;
+      --accent: #8a7ef0;
+      --accent-ink: #13151d;
+      --accent-soft: #23213a;
+      --fire: #f07a53;
+      --water: #5aa3f0;
+      --earth: #7cb46e;
+      --wind: #7fd3ea;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #13151d;
+    --paper-raised: #1b1e29;
+    --ink: #e9eaf2;
+    --ink-dim: #b2b6c9;
+    --ink-faint: #767c92;
+    --line: #2c3040;
+    --accent: #8a7ef0;
+    --accent-ink: #13151d;
+    --accent-soft: #23213a;
+    --fire: #f07a53;
+    --water: #5aa3f0;
+    --earth: #7cb46e;
+    --wind: #7fd3ea;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Public Sans", system-ui, sans-serif;
+    line-height: 1.65;
+  }
+
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 20px 80px;
+  }
+
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+  .lang-btn {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--paper-raised);
+    color: var(--ink-dim);
+    cursor: pointer;
+  }
+  .lang-btn[aria-pressed="true"] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  header.doc-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 8px;
+  }
+  .emblem {
+    width: 44px;
+    height: 44px;
+    flex: none;
+  }
+  .doc-header h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(26px, 4vw, 32px);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .app-name {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 4px;
+  }
+
+  .effective-date {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: var(--ink-faint);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 10px 0;
+    margin: 28px 0 36px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .intro {
+    color: var(--ink-dim);
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  section.clause {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+  .clause-num {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--accent);
+    line-height: 1.2;
+  }
+  .clause h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+  .clause p {
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: var(--ink);
+  }
+  .clause p:last-child { margin-bottom: 0; }
+  .clause ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  .clause li {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  .clause a {
+    color: var(--accent);
+  }
+
+  .parties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  .party {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--ink-dim);
+    border: 1px solid var(--line);
+  }
+  .party .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    flex: none;
+  }
+
+  .contact-box {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-top: 10px;
+  }
+  .contact-box .label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 6px;
+  }
+  .contact-box .value {
+    font-size: 16px;
+    font-weight: 600;
+    word-break: break-word;
+  }
+  .copy-btn {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    padding: 5px 11px;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--ink-dim);
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .copy-btn:active { transform: translateY(1px); }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--ink-faint);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  [hidden] { display: none !important; }
+
+  @media (max-width: 480px) {
+    section.clause { grid-template-columns: 32px 1fr; gap: 12px; }
+    .clause-num { font-size: 20px; }
+  }
+
+  /* ---- Дополнения для 5 языков ---- */
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; }
+  .toolbar { flex-wrap: wrap; }
+  .clause .sub { display: grid; grid-template-columns: 34px 1fr; gap: 8px; margin: 0 0 10px; }
+  .sub-num {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: var(--accent);
+    padding-top: 3px;
+  }
+  /* Для CJK подбираем системные шрифты нужного региона, иначе браузер выберет случайный глиф-набор. */
+  html[lang="ja"] body, html[lang="ja"] .doc-header h1, html[lang="ja"] .clause h2, html[lang="ja"] .clause-num {
+    font-family: "Public Sans", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", "Noto Sans JP", system-ui, sans-serif;
+  }
+  html[lang="zh"] body, html[lang="zh"] .doc-header h1, html[lang="zh"] .clause h2, html[lang="zh"] .clause-num {
+    font-family: "Public Sans", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  }
+  html[lang="ko"] body, html[lang="ko"] .doc-header h1, html[lang="ko"] .clause h2, html[lang="ko"] .clause-num {
+    font-family: "Public Sans", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+  }
+  /* Корейский пишется с пробелами — не рвём слова посередине. */
+  html[lang="ko"] .intro, html[lang="ko"] .clause p, html[lang="ko"] .clause li, html[lang="ko"] .sub { word-break: keep-all; }
+  /* Блок заголовка — flex-ребёнок: без min-width:0 длинное слово не даёт ему сжаться по ширине экрана. */
+  .doc-header > div { min-width: 0; }
+  .doc-header h1, .app-name { overflow-wrap: anywhere; }
+  @media (max-width: 480px) {
+    .clause .sub { grid-template-columns: 30px 1fr; gap: 6px; }
+    .doc-header h1 { font-size: 22px; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="toolbar" role="group" aria-label="Language / Язык / 言語 / 语言 / 언어">
+    <button class="lang-btn" type="button" data-lang-btn="ru" aria-pressed="true" onclick="setLang('ru')">RU</button>
+    <button class="lang-btn" type="button" data-lang-btn="en" aria-pressed="false" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" type="button" data-lang-btn="ja" aria-pressed="false" onclick="setLang('ja')">JA</button>
+    <button class="lang-btn" type="button" data-lang-btn="zh" aria-pressed="false" onclick="setLang('zh')">ZH</button>
+    <button class="lang-btn" type="button" data-lang-btn="ko" aria-pressed="false" onclick="setLang('ko')">KO</button>
+  </div>
+
+  <header class="doc-header">
+    <svg class="emblem" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+      <path d="M24 2 L46 24 L24 46 L2 24 Z" stroke="var(--line)" stroke-width="1.5" fill="var(--paper-raised)"/>
+      <circle cx="24" cy="13" r="5" fill="var(--fire)"/>
+      <circle cx="35" cy="24" r="5" fill="var(--wind)"/>
+      <circle cx="24" cy="35" r="5" fill="var(--earth)"/>
+      <circle cx="13" cy="24" r="5" fill="var(--water)"/>
+    </svg>
+    <div>
+      <p class="app-name">Мастера Фамильяров · Masters of Familiars</p>
+      <h1 data-ru="Политика конфиденциальности" data-en="Privacy Policy" data-ja="プライバシーポリシー" data-zh="隐私政策" data-ko="개인정보 처리방침">Политика конфиденциальности</h1>
+    </div>
+  </header>
+
+  <div class="effective-date">
+    <span data-ru="Дата вступления в силу: 01.11.2026" data-en="Effective date: November 1, 2026" data-ja="施行日：2026年11月1日" data-zh="生效日期：2026年11月1日" data-ko="시행일: 2026년 11월 1일">Дата вступления в силу: 01.11.2026</span>
+    <span>Android · Yandex Games · Playgama</span>
+  </div>
+
+  <p class="intro" data-ru="Эта Политика описывает, какие данные собирает игра «Мастера Фамильяров» (далее — «Игра»), как они используются и кому передаются. Игра доступна на нескольких платформах (Android, Яндекс Игры, Playgama и другие игровые порталы). Набор функций зависит от платформы: например, вход в аккаунт, чат и мультиплеер доступны не везде." data-en="This Policy explains what data the game &quot;Masters of Familiars&quot; (the &quot;Game&quot;) collects, how it is used and who receives it. The Game is available on several platforms (Android, Yandex Games, Playgama and other game portals). Features depend on the platform: for example, account sign-in, chat and multiplayer are not available everywhere." data-ja="本ポリシーは、ゲーム「Masters of Familiars」（以下「本ゲーム」）が収集するデータ、その利用方法、および提供先について説明します。本ゲームは複数のプラットフォーム（Android、Yandex Games、Playgama、その他のゲームポータル）で提供されています。機能はプラットフォームによって異なり、アカウントへのログイン、チャット、マルチプレイはすべての環境で利用できるわけではありません。" data-zh="本政策说明游戏《Masters of Familiars》（以下简称&quot;本游戏&quot;）收集哪些数据、如何使用以及向谁提供。本游戏在多个平台上发布（Android、Yandex Games、Playgama 及其他游戏门户）。功能因平台而异：例如，账号登录、聊天和多人模式并非在所有平台上都可用。" data-ko="본 방침은 게임 「Masters of Familiars」(이하 &quot;게임&quot;)가 어떤 데이터를 수집하고, 어떻게 사용하며, 누구에게 제공하는지 설명합니다. 게임은 여러 플랫폼(Android, Yandex Games, Playgama 및 기타 게임 포털)에서 제공됩니다. 기능은 플랫폼에 따라 다르며, 예를 들어 계정 로그인, 채팅, 멀티플레이는 모든 환경에서 제공되지 않습니다.">Эта Политика описывает, какие данные собирает игра «Мастера Фамильяров» (далее — «Игра»), как они используются и кому передаются. Игра доступна на нескольких платформах (Android, Яндекс Игры, Playgama и другие игровые порталы). Набор функций зависит от платформы: например, вход в аккаунт, чат и мультиплеер доступны не везде.</p>
+
+  <section class="clause">
+    <span class="clause-num">1</span>
+    <div>
+      <h2 data-ru="Какие данные мы собираем" data-en="Data we collect" data-ja="収集するデータ" data-zh="我们收集的数据" data-ko="수집하는 데이터">Какие данные мы собираем</h2>
+      <p class="sub"><span class="sub-num">1.1</span><span data-ru="Игровой прогресс: отряд фамильяров, предметы, валюта, настройки. Личных данных он не содержит. Он хранится на вашем устройстве и, если платформа это поддерживает, в облаке платформы или на наших серверах." data-en="Game progress: your party of familiars, items, currency and settings. It contains no personal data. It is stored on your device and, where the platform supports it, in the platform's cloud or on our servers." data-ja="ゲームの進行状況：使い魔のパーティ、アイテム、通貨、設定。個人情報は含まれません。お使いの端末に保存され、プラットフォームが対応している場合はプラットフォームのクラウドまたは当社のサーバーにも保存されます。" data-zh="游戏进度：使魔队伍、道具、货币和设置。其中不包含个人信息。数据保存在您的设备上；如果平台支持，也会保存在平台的云端或我们的服务器上。" data-ko="게임 진행 정보: 사역마 파티, 아이템, 재화, 설정. 개인정보는 포함되지 않습니다. 기기에 저장되며, 플랫폼이 지원하는 경우 플랫폼의 클라우드 또는 당사 서버에도 저장됩니다.">Игровой прогресс: отряд фамильяров, предметы, валюта, настройки. Личных данных он не содержит. Он хранится на вашем устройстве и, если платформа это поддерживает, в облаке платформы или на наших серверах.</span></p>
+      <p class="sub"><span class="sub-num">1.2</span><span data-ru="Игровой никнейм, который вы придумываете сами. Это не настоящее имя. Он виден другим игрокам в мультиплеере и чате." data-en="A nickname you choose yourself. It is not your real name. Other players can see it in multiplayer and chat." data-ja="ご自身で決めたニックネーム。本名ではありません。マルチプレイやチャットで他のプレイヤーに表示されます。" data-zh="您自己设定的昵称。它不是您的真实姓名。其他玩家可在多人模式和聊天中看到它。" data-ko="직접 정한 닉네임. 실명이 아닙니다. 멀티플레이와 채팅에서 다른 플레이어에게 표시됩니다.">Игровой никнейм, который вы придумываете сами. Это не настоящее имя. Он виден другим игрокам в мультиплеере и чате.</span></p>
+      <p class="sub"><span class="sub-num">1.3</span><span data-ru="Если вы входите в аккаунт через Google (Android): адрес электронной почты и идентификатор аккаунта. Без входа игра работает с анонимным идентификатором." data-en="If you sign in with Google (Android): your email address and an account identifier. Without signing in, the Game uses an anonymous identifier." data-ja="Googleでログインした場合（Android）：メールアドレスとアカウント識別子。ログインしない場合は匿名の識別子が使われます。" data-zh="如果您使用 Google 登录（Android）：您的电子邮件地址和账号标识符。未登录时，本游戏使用匿名标识符。" data-ko="Google로 로그인하는 경우(Android): 이메일 주소와 계정 식별자. 로그인하지 않으면 게임은 익명 식별자를 사용합니다.">Если вы входите в аккаунт через Google (Android): адрес электронной почты и идентификатор аккаунта. Без входа игра работает с анонимным идентификатором.</span></p>
+      <p class="sub"><span class="sub-num">1.4</span><span data-ru="Если доступен мультиплеер: сообщения в игровом чате, жалобы на игроков, результаты PvP-матчей, название игровой локации, в которой вы находитесь (это название игровой карты, а не ваше местоположение)." data-en="Where multiplayer is available: chat messages, reports about players, PvP match results and the name of the in-game location you are in (a name of a game map, not your real location)." data-ja="マルチプレイが利用できる場合：チャットのメッセージ、プレイヤーへの通報、PvP対戦の結果、現在いるゲーム内ロケーションの名称（ゲーム内マップの名前であり、実際の位置情報ではありません）。" data-zh="在提供多人模式的情况下：聊天消息、对玩家的举报、PvP 对战结果，以及您所在的游戏内地点名称（这是游戏地图的名称，不是您的真实位置）。" data-ko="멀티플레이를 사용할 수 있는 경우: 채팅 메시지, 플레이어 신고, PvP 대전 결과, 현재 있는 게임 내 지역의 이름(게임 지도의 이름이며 실제 위치가 아닙니다).">Если доступен мультиплеер: сообщения в игровом чате, жалобы на игроков, результаты PvP-матчей, название игровой локации, в которой вы находитесь (это название игровой карты, а не ваше местоположение).</span></p>
+      <p class="sub"><span class="sub-num">1.5</span><span data-ru="Технические данные: случайный идентификатор, который создаёт сама игра (он не привязан к оборудованию), а также данные, которые автоматически получают рекламные и платформенные сервисы (рекламный идентификатор устройства, модель устройства, версия системы, примерное местоположение по IP-адресу, на уровне страны или региона)." data-en="Technical data: a random identifier created by the Game itself (not tied to your hardware), and data that advertising and platform services receive automatically (advertising ID, device model, operating system version, approximate location from your IP address at country or region level)." data-ja="技術情報：本ゲーム自身が生成するランダムな識別子（ハードウェアに紐づきません）、および広告サービスやプラットフォームが自動的に取得するデータ（広告ID、端末の機種、OSのバージョン、IPアドレスに基づくおおよその所在地（国・地域レベル））。" data-zh="技术数据：由本游戏自行生成的随机标识符（不与硬件绑定），以及广告和平台服务自动获取的数据（广告标识符、设备型号、系统版本、根据 IP 地址推断的大致位置，精确到国家或地区级别）。" data-ko="기술 데이터: 게임이 자체적으로 생성하는 임의의 식별자(하드웨어와 연결되지 않음), 그리고 광고 및 플랫폼 서비스가 자동으로 수집하는 데이터(광고 ID, 기기 모델, 운영체제 버전, IP 주소를 기반으로 한 대략적인 위치(국가 또는 지역 수준)).">Технические данные: случайный идентификатор, который создаёт сама игра (он не привязан к оборудованию), а также данные, которые автоматически получают рекламные и платформенные сервисы (рекламный идентификатор устройства, модель устройства, версия системы, примерное местоположение по IP-адресу, на уровне страны или региона).</span></p>
+      <p data-ru="Мы не собираем настоящее имя, адрес, телефон, точное местоположение (GPS), фотографии, аудио и видео с устройства, список контактов, данные о здоровье. Платёжные данные не проходят через Игру: оплату обрабатывает платформа." data-en="We do not collect your real name, address, phone number, precise location (GPS), photos, audio or video from your device, contacts or health data. Payment details do not pass through the Game: payments are handled by the platform." data-ja="本名、住所、電話番号、正確な位置情報（GPS）、端末の写真・音声・動画、連絡先、健康情報は収集しません。決済情報は本ゲームを経由せず、プラットフォームが処理します。" data-zh="我们不收集您的真实姓名、地址、电话号码、精确位置（GPS）、设备中的照片、音频或视频、联系人以及健康数据。支付信息不会经过本游戏，支付由平台处理。" data-ko="실명, 주소, 전화번호, 정확한 위치(GPS), 기기의 사진·오디오·동영상, 연락처, 건강 정보는 수집하지 않습니다. 결제 정보는 게임을 거치지 않으며 플랫폼이 처리합니다.">Мы не собираем настоящее имя, адрес, телефон, точное местоположение (GPS), фотографии, аудио и видео с устройства, список контактов, данные о здоровье. Платёжные данные не проходят через Игру: оплату обрабатывает платформа.</p>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">2</span>
+    <div>
+      <h2 data-ru="Как мы используем данные" data-en="How we use data" data-ja="データの利用目的" data-zh="我们如何使用数据" data-ko="데이터 사용 목적">Как мы используем данные</h2>
+      <p data-ru="Данные используются только для: работы Игры и сохранения прогресса; мультиплеера (присутствие в локации, чат, PvP); модерации чата (рассмотрение жалоб, ограничение нарушителей); показа рекламы и оценки её работы; улучшения стабильности Игры." data-en="Data is used only to: run the Game and save progress; provide multiplayer (presence in a location, chat, PvP); moderate chat (review reports, restrict offenders); show ads and measure how they perform; improve the stability of the Game." data-ja="データは次の目的にのみ使用します：本ゲームの動作と進行状況の保存、マルチプレイ（ロケーションへの参加、チャット、PvP）、チャットのモデレーション（通報の確認、違反者への制限）、広告の表示と効果測定、本ゲームの安定性の向上。" data-zh="数据仅用于：运行本游戏并保存进度；提供多人功能（地点在线状态、聊天、PvP）；聊天审核（处理举报、限制违规者）；展示广告并评估其效果；提升本游戏的稳定性。" data-ko="데이터는 다음 목적으로만 사용됩니다: 게임 운영 및 진행 정보 저장, 멀티플레이(지역 접속 상태, 채팅, PvP), 채팅 관리(신고 검토, 위반자 제한), 광고 표시 및 성과 측정, 게임 안정성 개선.">Данные используются только для: работы Игры и сохранения прогресса; мультиплеера (присутствие в локации, чат, PvP); модерации чата (рассмотрение жалоб, ограничение нарушителей); показа рекламы и оценки её работы; улучшения стабильности Игры.</p>
+      <p data-ru="Мы не продаём ваши данные." data-en="We do not sell your data." data-ja="お客様のデータを販売することはありません。" data-zh="我们不会出售您的数据。" data-ko="귀하의 데이터를 판매하지 않습니다.">Мы не продаём ваши данные.</p>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">3</span>
+    <div>
+      <h2 data-ru="Передача данных третьим лицам" data-en="Sharing with third parties" data-ja="第三者への提供" data-zh="向第三方提供" data-ko="제3자 제공">Передача данных третьим лицам</h2>
+      <p class="sub"><span class="sub-num">3.1</span><span data-ru="Supabase — облачная инфраструктура, на которой хранятся данные аккаунта, чата и мультиплеера." data-en="Supabase — the cloud infrastructure that stores account, chat and multiplayer data." data-ja="Supabase：アカウント、チャット、マルチプレイのデータを保存するクラウド基盤です。" data-zh="Supabase：存储账号、聊天和多人模式数据的云基础设施。" data-ko="Supabase: 계정, 채팅, 멀티플레이 데이터를 저장하는 클라우드 인프라입니다.">Supabase — облачная инфраструктура, на которой хранятся данные аккаунта, чата и мультиплеера.</span></p>
+      <p class="sub"><span class="sub-num">3.2</span><span data-ru="Google — вход в аккаунт (Android). Google обрабатывает данные по собственной политике." data-en="Google — account sign-in (Android). Google processes data under its own policy." data-ja="Google：アカウントへのログイン（Android）。Googleは自社のポリシーに従ってデータを処理します。" data-zh="Google：账号登录（Android）。Google 按其自身政策处理数据。" data-ko="Google: 계정 로그인(Android). Google은 자체 정책에 따라 데이터를 처리합니다.">Google — вход в аккаунт (Android). Google обрабатывает данные по собственной политике.</span></p>
+      <p class="sub"><span class="sub-num">3.3</span><span data-ru="Рекламные сети и платформы, на которых вы играете (например, Yandex Mobile Ads, Яндекс Игры, Playgama). Они получают рекламный идентификатор и технические данные и обрабатывают их по собственным политикам конфиденциальности." data-en="Advertising networks and the platforms you play on (for example Yandex Mobile Ads, Yandex Games, Playgama). They receive the advertising ID and technical data and process it under their own privacy policies." data-ja="広告ネットワークおよびプレイ中のプラットフォーム（例：Yandex Mobile Ads、Yandex Games、Playgama）。広告IDや技術情報を受け取り、各社のプライバシーポリシーに従って処理します。" data-zh="广告网络以及您所使用的平台（例如 Yandex Mobile Ads、Yandex Games、Playgama）。它们会获取广告标识符和技术数据，并按各自的隐私政策处理。" data-ko="광고 네트워크 및 이용 중인 플랫폼(예: Yandex Mobile Ads, Yandex Games, Playgama). 광고 ID와 기술 데이터를 받아 각자의 개인정보 처리방침에 따라 처리합니다.">Рекламные сети и платформы, на которых вы играете (например, Yandex Mobile Ads, Яндекс Игры, Playgama). Они получают рекламный идентификатор и технические данные и обрабатывают их по собственным политикам конфиденциальности.</span></p>
+      <p data-ru="Других получателей данных, кроме перечисленных, нет." data-en="There are no other recipients of your data." data-ja="上記以外にデータの提供先はありません。" data-zh="除上述各方外，没有其他数据接收方。" data-ko="위에 기재된 곳 외에 데이터를 받는 곳은 없습니다.">Других получателей данных, кроме перечисленных, нет.</p>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">4</span>
+    <div>
+      <h2 data-ru="Хранение и защита" data-en="Storage and security" data-ja="保管とセキュリティ" data-zh="存储与安全" data-ko="보관 및 보안">Хранение и защита</h2>
+      <p data-ru="Данные передаются по защищённому соединению (HTTPS/TLS). Доступ к данным модерации (жалобы, ограничения) есть только у назначенных модераторов Игры." data-en="Data is transmitted over secure connections (HTTPS/TLS). Moderation data (reports, restrictions) is accessible only to designated moderators of the Game." data-ja="データは安全な通信（HTTPS/TLS）で送信されます。モデレーションに関するデータ（通報、制限）には、指定されたモデレーターのみがアクセスできます。" data-zh="数据通过安全连接（HTTPS/TLS）传输。审核数据（举报、限制）仅限本游戏指定的审核员访问。" data-ko="데이터는 보안 연결(HTTPS/TLS)로 전송됩니다. 관리 데이터(신고, 제한)에는 지정된 게임 운영자만 접근할 수 있습니다.">Данные передаются по защищённому соединению (HTTPS/TLS). Доступ к данным модерации (жалобы, ограничения) есть только у назначенных модераторов Игры.</p>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">5</span>
+    <div>
+      <h2 data-ru="Ваши права и удаление данных" data-en="Your rights and data deletion" data-ja="お客様の権利とデータの削除" data-zh="您的权利与数据删除" data-ko="이용자의 권리 및 데이터 삭제">Ваши права и удаление данных</h2>
+      <p data-ru="Вы можете удалить аккаунт и связанные с ним данные в меню «Аккаунт» внутри Игры (если на вашей платформе есть аккаунт) или написать на monstertamersupport@gmail.com. Запрос будет обработан в разумный срок. Данные, которые платформа хранит у себя (например, облачное сохранение Яндекс Игр), удаляются средствами этой платформы." data-en="You can delete your account and related data from the &quot;Account&quot; menu in the Game (if your platform has accounts) or by writing to monstertamersupport@gmail.com. We will process the request within a reasonable time. Data kept by the platform itself (for example Yandex Games cloud saves) is deleted using that platform's tools." data-ja="ゲーム内の「アカウント」メニュー（お使いのプラットフォームにアカウントがある場合）から、またはmonstertamersupport@gmail.comへのご連絡により、アカウントと関連データを削除できます。リクエストは合理的な期間内に対応します。プラットフォーム自体が保存しているデータ（例：Yandex Gamesのクラウドセーブ）は、そのプラットフォームの機能で削除してください。" data-zh="您可以在游戏内的&quot;账号&quot;菜单中删除账号及相关数据（如果您所在的平台支持账号），也可以发送邮件至 monstertamersupport@gmail.com。我们会在合理时间内处理请求。由平台自身保存的数据（例如 Yandex Games 的云存档）需使用该平台的工具删除。" data-ko="게임 내 &quot;계정&quot; 메뉴(이용 중인 플랫폼에 계정이 있는 경우)에서 계정과 관련 데이터를 삭제하거나 monstertamersupport@gmail.com 으로 문의하실 수 있습니다. 요청은 합리적인 기간 내에 처리됩니다. 플랫폼이 자체적으로 보관하는 데이터(예: Yandex Games 클라우드 저장)는 해당 플랫폼의 기능으로 삭제해야 합니다.">Вы можете удалить аккаунт и связанные с ним данные в меню «Аккаунт» внутри Игры (если на вашей платформе есть аккаунт) или написать на monstertamersupport@gmail.com. Запрос будет обработан в разумный срок. Данные, которые платформа хранит у себя (например, облачное сохранение Яндекс Игр), удаляются средствами этой платформы.</p>
+      <p data-ru="Без установленной игры аккаунт можно удалить на &lt;a href=&quot;https://neo-smit.github.io/monster-tamer-legal/delete-account.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;отдельной странице удаления аккаунта&lt;/a&gt; (вход через тот же Google-аккаунт)." data-en="Without the game installed, you can delete your account on the &lt;a href=&quot;https://neo-smit.github.io/monster-tamer-legal/delete-account.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;separate account deletion page&lt;/a&gt; (sign in with the same Google account)." data-ja="ゲームをインストールしていない場合は、&lt;a href=&quot;https://neo-smit.github.io/monster-tamer-legal/delete-account.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;アカウント削除専用ページ&lt;/a&gt;からアカウントを削除できます（同じGoogleアカウントでログインしてください）。" data-zh="即使未安装本游戏，您也可以在&lt;a href=&quot;https://neo-smit.github.io/monster-tamer-legal/delete-account.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;单独的账号删除页面&lt;/a&gt;删除账号（使用同一 Google 账号登录）。" data-ko="게임이 설치되어 있지 않아도 &lt;a href=&quot;https://neo-smit.github.io/monster-tamer-legal/delete-account.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;별도의 계정 삭제 페이지&lt;/a&gt;에서 계정을 삭제할 수 있습니다(동일한 Google 계정으로 로그인)." data-html>Без установленной игры аккаунт можно удалить на <a href="https://neo-smit.github.io/monster-tamer-legal/delete-account.html" target="_blank" rel="noopener">отдельной странице удаления аккаунта</a> (вход через тот же Google-аккаунт).</p>
+      <div class="contact-box">
+        <p class="label" data-ru="Контакт для вопросов и удаления данных" data-en="Contact for questions and data deletion" data-ja="お問い合わせ・データ削除の連絡先" data-zh="咨询与数据删除联系方式" data-ko="문의 및 데이터 삭제 연락처">Контакт для вопросов и удаления данных</p>
+        <span class="value" id="contact-email">monstertamersupport@gmail.com</span>
+        <button class="copy-btn" data-ru="Копировать" data-en="Copy" data-ja="コピー" data-zh="复制" data-ko="복사" type="button" onclick="copyEmail(this)">Копировать</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">6</span>
+    <div>
+      <h2 data-ru="Возраст" data-en="Age" data-ja="年齢" data-zh="年龄" data-ko="연령">Возраст</h2>
+      <p data-ru="Игра предназначена для пользователей от 13 лет. Мы сознательно не собираем данные детей младше 13 лет." data-en="The Game is intended for users aged 13 and older. We knowingly do not collect data from children under 13." data-ja="本ゲームは13歳以上の方を対象としています。13歳未満のお子様のデータを意図的に収集することはありません。" data-zh="本游戏面向 13 岁及以上的用户。我们不会有意收集 13 岁以下儿童的数据。" data-ko="게임은 만 13세 이상 이용자를 대상으로 합니다. 만 13세 미만 아동의 데이터는 의도적으로 수집하지 않습니다.">Игра предназначена для пользователей от 13 лет. Мы сознательно не собираем данные детей младше 13 лет.</p>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">7</span>
+    <div>
+      <h2 data-ru="Изменения" data-en="Changes" data-ja="変更" data-zh="变更" data-ko="변경">Изменения</h2>
+      <p data-ru="Мы можем обновлять эту Политику. Актуальная дата вступления в силу указана в начале документа." data-en="We may update this Policy. The current effective date is shown at the top of the document." data-ja="本ポリシーは更新されることがあります。最新の施行日は文書の冒頭に記載します。" data-zh="我们可能会更新本政策。当前生效日期显示在文档开头。" data-ko="본 방침은 변경될 수 있습니다. 현재 시행일은 문서 상단에 표시됩니다.">Мы можем обновлять эту Политику. Актуальная дата вступления в силу указана в начале документа.</p>
+    </div>
+  </section>
+
+  <section class="clause">
+    <span class="clause-num">8</span>
+    <div>
+      <h2 data-ru="Контакты" data-en="Contact" data-ja="お問い合わせ" data-zh="联系方式" data-ko="문의">Контакты</h2>
+      <p data-ru="По любым вопросам о данных: monstertamersupport@gmail.com" data-en="For any questions about your data: monstertamersupport@gmail.com" data-ja="データに関するご質問：monstertamersupport@gmail.com" data-zh="有关数据的任何问题：monstertamersupport@gmail.com" data-ko="데이터에 관한 문의: monstertamersupport@gmail.com">По любым вопросам о данных: monstertamersupport@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <span data-ru="© 2026 Мастера Фамильяров" data-en="© 2026 Masters of Familiars" data-ja="© 2026 Masters of Familiars" data-zh="© 2026 Masters of Familiars" data-ko="© 2026 Masters of Familiars">© 2026 Мастера Фамильяров</span>
+    <span class="pkg"><span data-ru="Пакет приложения" data-en="Package" data-ja="パッケージ" data-zh="应用包名" data-ko="패키지">Пакет приложения</span>: com.shadowteam.familiarmasters</span>
+  </footer>
+</div>
+
+<script>
+  var SUPPORTED = ["ru","en","ja","zh","ko"];
+  var TITLES = {"ru":"Политика конфиденциальности · Masters of Familiars","en":"Privacy Policy · Masters of Familiars","ja":"プライバシーポリシー · Masters of Familiars","zh":"隐私政策 · Masters of Familiars","ko":"개인정보 처리방침 · Masters of Familiars"};
+  var COPIED = {"ru":"Скопировано","en":"Copied","ja":"コピーしました","zh":"已复制","ko":"복사됨"};
+
+  function setLang(lang) {
+    if (SUPPORTED.indexOf(lang) < 0) lang = 'ru';
+    document.querySelectorAll('[data-ru]').forEach(function (el) {
+      var v = el.getAttribute('data-' + lang);
+      if (v === null) return;
+      if (el.hasAttribute('data-html')) el.innerHTML = v; else el.textContent = v;
+    });
+    document.querySelectorAll('[data-lang-btn]').forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-lang-btn') === lang));
+    });
+    document.documentElement.setAttribute('lang', lang);
+    document.title = TITLES[lang];
+    try { localStorage.setItem('privacyPolicyLang', lang); } catch (e) {}
+  }
+
+  function copyEmail(btn) {
+    var email = document.getElementById('contact-email').textContent;
+    var lang = document.documentElement.getAttribute('lang') || 'ru';
+    var done = function () {
+      btn.textContent = COPIED[lang];
+      setTimeout(function () { btn.textContent = btn.getAttribute('data-' + lang); }, 1500);
+    };
+    var selectText = function () {
+      var range = document.createRange();
+      range.selectNode(document.getElementById('contact-email'));
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(email).then(done).catch(selectText);
+    } else {
+      selectText();
+    }
+  }
+
+  // Язык: ?lang=ja в ссылке > сохранённый выбор > язык браузера > русский.
+  (function () {
+    var lang = null;
+    var m = /[?&]lang=([a-zA-Z]{2})/.exec(location.search);
+    if (m) lang = m[1].toLowerCase();
+    if (!lang) { try { lang = localStorage.getItem('privacyPolicyLang'); } catch (e) {} }
+    if (!lang) lang = (navigator.language || '').slice(0, 2).toLowerCase();
+    setLang(lang);
+  })();
+</script>
+
+</body>
+</html>
